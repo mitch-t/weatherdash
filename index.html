@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+   />
+
+    <link rel="stylesheet" href="weatherstyle.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <!-- Jumbotron for Title -->
+    <div class="jumbotron" style="background-color: #0b0b0c; color: white">
+      <h1 class="text-center">
+        <strong>Weather Dashboard</strong>
+      </h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <br />
+          <!-- search input and display for city buttons -->
+          <div class="card">
+            <div class="card-header">
+              <button type="submit" class="btn btn-default" id="search-city">
+                <i class="fa fa-search"></i>Search for a City
+              </button>
+              <form id="city-form">
+                <label for="city-input"></label>
+                <input type="text" id="city-input"/><br />
+              </form>
+            </div>
+            <div class="card-body">
+             <div id="buttons-view">TEST</div> 
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+            <!--displays current weather info-->
+          <div class="card">
+            <div class="card-header">Today's Weather:
+              <div class="city-weather"></div>  
+              <div class = "icon"></div>
+            </div>
+            <div class="card-body"> 
+              <!-- Retrieved data will be dumped here -->
+  <div class="tempF"></div>
+  <div class="humidity"></div>
+  <div class="wind"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+            <!--forcast data display-->
+          <div class="card">
+            <div class="card-header">Forecast:
+            <div class="card-body">  
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="sample.js"></script>
+  </body>
+</html>

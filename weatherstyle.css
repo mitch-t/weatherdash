@@ -1,0 +1,15 @@
+.header{
+    justify-content: center;
+    font-display: larger;
+}
+.container{
+    background-color: dodgerblue;
+}
+.city{
+    background-color: rgb(180, 211, 241);
+    text-decoration-style: ghostwhite;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: blanchedalmond;   
+}
+
