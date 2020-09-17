@@ -11,13 +11,6 @@ function displayCityInfo(city) {
     "&appid=" +
     APIKey;
 
-  //  $.ajax({
-  //   url: queryURL,
-  //    method: "GET",
-  //  }).then(function (response) {
-  //   $("#cities-view").text(JSON.stringify(response));
-  // });
-  //}
   $.ajax({
     url: queryURL,
     method: "GET",
