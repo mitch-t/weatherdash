@@ -21,18 +21,16 @@
 
   <body>
     <!-- Jumbotron for Title -->
-    <div class="jumbotron" style="background-color: #0b0b0c; color: white">
-      <h1 class="text-center">
-        <strong>Weather Dashboard</strong>
-      </h1>
-    </div>
+    <nav class ="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1 w-100 text-center">Weather Dashboard</span>
+    </nav>
     <div class="container">
+      
       <div class="row">
-        <div class="col-sm-3">
+      
+        <div class="col-4 bg-light">
           <br />
           <!-- search input and display for city buttons -->
-          <div class="card">
-            <div class="card-header">
               <button type="submit" class="btn btn-default" id="search-city">
                 <i class="fa fa-search"></i>Search for a City
               </button>
@@ -40,36 +38,98 @@
                 <label for="city-input"></label>
                 <input type="text" id="city-input"/><br />
               </form>
-            </div>
-            <div class="card-body">
-             <div id="buttons-view">TEST</div> 
-
-            </div>
-          </div>
+             <div id="buttons-view"></div> 
+            
+           
+              <div class="row">
+                  <div class="col-10 border border-dark m-3 rounded">
+                      <div class="row">
+                          <div class="col-12">
+                            <h3></h3>
+                            <div class="city-weather"></div>  
+                            <div class = "icon"></div>  
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12">
+                            <div class="tempF"></div>  
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12">
+                            <div class="humidity"></div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12">
+                            <div class="wind"></div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12 d-flex">
+                            <div class="UV-index"></div>
+                          </div>
+                      </div>
+                  </div>  
+              </div>  
         </div>
-        <div class="col-sm-4">
-            <!--displays current weather info-->
-          <div class="card">
-            <div class="card-header">Today's Weather:
-              <div class="city-weather"></div>  
-              <div class = "icon"></div>
-            </div>
-            <div class="card-body"> 
-              <!-- Retrieved data will be dumped here -->
-  <div class="tempF"></div>
-  <div class="humidity"></div>
-  <div class="wind"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-5">
+      
+       <div class="col-4">
             <!--forcast data display-->
           <div class="card">
-            <div class="card-header">Forecast:
-            <div class="card-body">  
-      </div>
+            <div class="card-header">
+              <div class="f-date1"></div>  
+            </div>
+            <div class = "card-body">
+              <div class = "iconF1"></div>
+             <div class="f-tempF1"></div>
+             <div class="f-humidity1"></div> 
+          </div>
+       </div>
+       <div class="card">
+        <div class="card-header">
+          <div class="f-date3"></div> 
+        </div>
+            <div class="card-body">
+        <div class = "iconF3"></div>
+       <div class="f-tempF3"></div>
+       <div class="f-humidity3"></div>
+            </div>
     </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="f-date5"></div>
+      </div>
+    <div class="card-body"> 
+      <div class = "iconF5"></div>
+     <div class="f-tempF5"></div>
+     <div class="f-humidity5"></div>
+  </div>
+    </div>
+       </div>
+    <div class ="col-4">
+      <div class="card">
+        <div class="card-header">
+          <div class="f-date2"></div>  
+        </div>
+        <div class = "card-body">
+          <div class = "iconF2"></div>
+         <div class="f-tempF2"></div>
+         <div class="f-humidity2"></div> 
+      </div>
+   </div>
+   <div class="card">
+    <div class="card-header">
+      <div class="f-date4"></div>  
+    </div>
+    <div class = "card-body">
+      <div class = "iconF4"></div>
+     <div class="f-tempF4"></div>
+     <div class="f-humidity4"></div> 
+    </div>
+          
+        
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="sample.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>

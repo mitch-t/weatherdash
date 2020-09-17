@@ -1,9 +1,17 @@
-.header{
-    justify-content: center;
-    font-display: larger;
+  
+.navbar-brand {
+    font-size: 36px;
+}
+.text-center {
+    text-align: center!important;
 }
 .container{
-    background-color: dodgerblue;
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
 }
 .city{
     background-color: rgb(180, 211, 241);
@@ -12,4 +20,3 @@
     padding-right: 15px;
     border-color: blanchedalmond;   
 }
-
