@@ -31,12 +31,12 @@
         <div class="col-4 bg-light">
           <br />
           <!-- search input and display for city buttons -->
-              <button type="submit" class="btn btn-default" id="search-city">
-                <i class="fa fa-search"></i>Search for a City
-              </button>
+              
               <form id="city-form">
                 <label for="city-input"></label>
-                <input type="text" id="city-input"/><br />
+                <input type="text" id="city-input"/><button type="submit" id="search-city">
+                  <i class="fa fa-search"></i>Search 
+                </button>
               </form>
              <div id="buttons-view"></div> 
             
@@ -44,8 +44,9 @@
               <div class="row">
                   <div class="col-10 border border-dark m-3 rounded">
                       <div class="row">
-                          <div class="col-12">
-                            <h3></h3>
+                          <div class="col-12"> 
+                            <h5 id="currentDay"></h5>
+                            
                             <div class="city-weather"></div>  
                             <div class = "icon"></div>  
                           </div>
@@ -78,7 +79,7 @@
             <!--forcast data display-->
           <div class="card">
             <div class="card-header">
-              <div class="f-date1"></div>  
+              <h5 id="currentDay1"></h5> 
             </div>
             <div class = "card-body">
               <div class = "iconF1"></div>
@@ -88,7 +89,7 @@
        </div>
        <div class="card">
         <div class="card-header">
-          <div class="f-date3"></div> 
+          <h5 id="currentDay3"></h5> 
         </div>
             <div class="card-body">
         <div class = "iconF3"></div>
@@ -98,7 +99,7 @@
     </div>
     <div class="card">
       <div class="card-header">
-        <div class="f-date5"></div>
+        <h5 id="currentDay5"></h5> 
       </div>
     <div class="card-body"> 
       <div class = "iconF5"></div>
@@ -110,7 +111,7 @@
     <div class ="col-4">
       <div class="card">
         <div class="card-header">
-          <div class="f-date2"></div>  
+          <h5 id="currentDay2"></h5>  
         </div>
         <div class = "card-body">
           <div class = "iconF2"></div>
@@ -120,7 +121,7 @@
    </div>
    <div class="card">
     <div class="card-header">
-      <div class="f-date4"></div>  
+      <h5 id="currentDay4"></h5>  
     </div>
     <div class = "card-body">
       <div class = "iconF4"></div>
@@ -130,6 +131,7 @@
           
         
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
